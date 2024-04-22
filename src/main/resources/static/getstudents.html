@@ -44,7 +44,7 @@
 <script>
 
     // URL from which JSON data will be fetched
-    const url = "http://localhost:8080/students";
+    const url = "http://udg-env.eba-twkcmhfw.us-east-2.elasticbeanstalk.com/students";
 
     // Function to populate table from JSON data
     async function populateTableFromJSON(url) {
@@ -138,7 +138,7 @@
         };
 
 
-        const apiUrl = "http://localhost:8080/students";
+        const apiUrl = "http://udg-env.eba-twkcmhfw.us-east-2.elasticbeanstalk.com:8080/students";
 
 
         // Configure the request
@@ -192,7 +192,7 @@
     }
 
     function deleteStudent(id) {
-        const deleteUrl = "http://localhost:8080/students/delete-student-by-id?id="+id;
+        const deleteUrl = "http://udg-env.eba-twkcmhfw.us-east-2.elasticbeanstalk.com:8080/students/delete-student-by-id?id="+id;
         fetch(deleteUrl, {
             method: 'DELETE',
             headers: {
